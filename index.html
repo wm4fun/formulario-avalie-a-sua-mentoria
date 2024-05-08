@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>avalie a sua mentoria</h1>
+
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+
+            <img src="/images/img1.svg" alt="logotipo">
+
+            <div class="top__cabecalho">Informações pessoais</div>
+        </header>
+
+        <form id="my__form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+
+                    <div class="column">
+                        <div class="input-wrapper">
+                            <label for="firstname">Nome</label>
+                            <input type="text" id="firstname" required />
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" id="lastname" required />
+                        </div>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="email">Email<span>(digite um email válido)</span></label>
+                        <input type="email" id="email" required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+
+                    <div class="column">
+                        <div class="input-wrapper">
+                            <label for="mentor">Selecione quem foi o seu mentor</label>
+                            <select id="mentor" >
+                                <option value="mentor__name">Leonardo</option>
+                                <option value="mentor__name">Rafael</option>
+                                <option value="mentor__name">Donatello</option>
+                                <option value="mentor__name">Michelangelo</option>
+                                <option value="mentor__name">Mestre Splinter</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="feedback__mentor">Feedback sobre o mentor</label>
+                        <textarea id="feedback__mentor" style="resize: none" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="satisfaction" />
+                        <label for="satisfaction">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando próxima mentoria</legend>
+
+                    <div class="column-date">
+                        <div class="input-wrapper">
+                            <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date" required />
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="event__start">Das</label>
+                            <input type="time" id="event__start" required />
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="event__end">Até</label>
+                            <input type="time" id="event__end" required />
+                        </div>
+                    </div>    
+                </div>
+            </fieldset>
+
+            <footer>
+                <input class="buttom" type="submit" form="my__form" value="Salvar">
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>
+
